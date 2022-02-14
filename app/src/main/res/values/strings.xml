@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">EyesOfWitches</string>
+    <string name="prompt_text">Select the Sun sign</string>
+    <string name="submit_button">Get Predictions</string>
+    <string name="background_description">Just an image</string>
+    <string-array name="sunsigns">
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
 </resources>
