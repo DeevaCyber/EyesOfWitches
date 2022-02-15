@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -19,66 +20,54 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/eyesofwitches" />
-
-    <TextView
-        android:id="@+id/promptTextView"
-        android:layout_width="296dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_horizontal"
-        android:text="@string/prompt_text"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/backgroundImageView"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/backgroundImageView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/zodiac_portrait" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="291dp"
         android:layout_height="48dp"
-        android:layout_marginTop="35dp"
+        android:layout_above="@+id/resultView"
+        android:layout_marginBottom="12dp"
         android:background="@android:color/holo_blue_light"
         android:gravity="end"
-        app:layout_constraintEnd_toStartOf="@+id/backgroundImageView"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/backgroundImageView"
-        app:layout_constraintTop_toBottomOf="@+id/promptTextView" />
+        app:layout_constraintBottom_toTopOf="@+id/resultView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="179dp"
         android:layout_height="59dp"
-        android:layout_marginTop="177dp"
+        android:layout_marginBottom="16dp"
         android:background="#FF9800"
         android:onClick=""
         android:text="@string/submit_button"
-        app:layout_constraintEnd_toStartOf="@+id/backgroundImageView"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/backgroundImageView"
-        app:layout_constraintTop_toTopOf="@+id/backgroundImageView"
+        android:textColor="#AF8B30"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="OnClick" />
 
     <TextView
         android:id="@+id/resultView"
-        android:layout_width="309dp"
-        android:layout_height="417dp"
-        android:layout_marginTop="260dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginRight="39dp"
+        android:layout_width="316dp"
+        android:layout_height="411dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="55dp"
         android:foregroundGravity="fill_horizontal"
         android:justificationMode="inter_word"
+        android:textColor="#AF8B30"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:textColor="#FFFFFF"
         android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/backgroundImageView"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/backgroundImageView"
-        app:layout_constraintTop_toTopOf="@+id/backgroundImageView" />
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
